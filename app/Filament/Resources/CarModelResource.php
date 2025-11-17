@@ -64,6 +64,8 @@ class CarModelResource extends Resource
                     ->columnSpanFull(),
                 Forms\Components\FileUpload::make('images')
                     ->multiple()
+                    ->image()
+                    ->disk('public')
                     ->columnSpanFull(),
                 Forms\Components\Toggle::make('isAvailable')
                     ->required(),
